@@ -1,0 +1,319 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="750dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="115dp"
+         android:layout_marginLeft="18dp">
+
+        <TextView
+            android:id="@+id/tv11"
+            android:layout_width="250dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="Image Name"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/tv12"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:text="UP"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/tv13"
+            android:layout_width="65dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:text="Down"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/tv14"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:text="Delete"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/tv15"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:text="Duration"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+         <TextView
+            android:id="@+id/tv16"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="50dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:text="Text"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_alignParentRight="true"
+      android:layout_marginRight="55dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/himalayalogo" 
+        android:visibility="invisible"/>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="800dp"
+        android:layout_height="match_parent"
+    android:layout_marginBottom="43dp"
+    android:layout_marginTop="28dp"
+        android:layout_alignTop="@+id/linearLayout1"
+        >
+
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_width="800dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" 
+            android:layout_marginLeft="20dp">
+
+            <TableRow
+                android:id="@+id/tr1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/tv11"
+                    android:layout_width="250dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text=" "
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/tv12"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:text=" "
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/tv13"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:text=" "
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/tv14"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:text=" "
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/tv15"
+                    android:layout_width="110dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:text=" "
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+                <TextView
+            android:id="@+id/tv16"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+                <TextView
+            android:id="@+id/tvspin"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginLeft="73dp"
+         android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:text="Total No. Of File :" />
+
+    <TextView
+        android:id="@+id/nooffile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    <LinearLayout
+         android:layout_width="443dp"
+        android:layout_height="240dp"
+        android:layout_marginLeft="820dp"
+        android:layout_marginTop="400dp" 
+        android:background="@drawable/dash"
+        android:orientation="vertical"
+        >
+         <LinearLayout
+         android:layout_width="440dp"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+       android:gravity="center_vertical"
+       >
+
+             <Button
+                  android:id="@+id/btn_import"
+                 android:layout_width="130dp"
+                 android:layout_height="90dp"
+                 android:layout_marginLeft="10dp"
+                   android:background="@drawable/custombuttonimport"
+                 />
+             
+              <Button
+                 android:id="@+id/btnlogo"
+                 android:layout_width="130dp"
+                 android:layout_height="90dp"
+                android:background="@drawable/custombuttonlogo"
+                  android:layout_marginLeft="15dp"/>
+               <Button
+                 android:id="@+id/btncomtext"
+                 android:layout_width="130dp"
+                 android:layout_height="90dp"
+                 android:background="@drawable/custombuttontext"
+                  android:layout_marginLeft="15dp"/>
+        
+        </LinearLayout>
+         <LinearLayout
+         android:layout_width="440dp"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        
+       >
+
+             <Button
+                 android:id="@+id/btntitle"
+                 android:layout_width="130dp"
+                 android:layout_height="90dp"
+                 android:background="@drawable/custombuttontitle"
+                 android:layout_marginLeft="10dp"
+                 />
+              <Button
+                 android:id="@+id/button1"
+                 android:layout_width="130dp"
+                 android:layout_height="90dp"
+               android:background="@drawable/custombuttonsave"
+                  android:layout_marginLeft="15dp"/>
+              
+        
+        </LinearLayout>
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nooffile"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_marginLeft="37dp"
+        android:text="Button" 
+        android:visibility="visible"/>
+
+</RelativeLayout>

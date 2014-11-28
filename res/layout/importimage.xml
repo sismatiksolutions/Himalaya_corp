@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:padding="10dp"
+    android:background="@drawable/background">
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp" 
+        android:layout_marginBottom="65dp"
+        android:layout_marginLeft="100dp">
+    </ListView>
+
+    <ImageView
+        android:id="@+id/importimage"
+        android:layout_width="380dp"
+        android:layout_height="330dp"
+       android:layout_marginTop="100dp"
+        android:layout_marginLeft="150dp"
+        android:layout_toRightOf="@+id/listView1"
+        android:src="@drawable/ic_launcher" 
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/listView1"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="28dp"
+        
+        android:textSize="40sp"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:text="Click A File To Copy In Sdcard" />
+
+    <Button
+        android:id="@+id/btnusb"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="205dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/custombuttonusb"
+         />
+
+    <Button
+        android:id="@+id/btnsdcard"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBaseline="@+id/btnusb"
+        android:layout_alignBottom="@+id/btnusb"
+        android:layout_marginLeft="23dp"
+        android:layout_toRightOf="@+id/btnusb"
+        android:background="@drawable/custombuttonsd" />
+
+    <Button
+        android:id="@+id/btn_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/listView1"
+        android:layout_alignRight="@+id/importimage"
+        android:layout_marginBottom="562dp"
+        android:layout_marginRight="938dp"
+        android:text="Download" />
+ 
+</RelativeLayout>
